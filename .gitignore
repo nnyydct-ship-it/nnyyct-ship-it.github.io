@@ -1,4 +1,6 @@
-# Logs
+# =========================
+# Logs (日志)
+# =========================
 logs
 *.log
 npm-debug.log*
@@ -7,18 +9,30 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
+# =========================
+# Node (依赖与构建产物)
+# =========================
+node_modules/
+dist/
+dist-ssr/
 *.local
 
-# Editor directories and files
+# =========================
+# Editor / OS (编辑器与系统文件)
+# =========================
 .vscode/*
 !.vscode/extensions.json
-.idea
+.idea/
 .DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+Thumbs.db
+
+# =========================
+# Optional caches (可选缓存)
+# =========================
+.eslintcache
+
+# =========================
+# IMPORTANT: ignore big videos (重点：忽略大视频)
+# =========================
+public/Animations/*.mp4
+public/Animations/**/*.mp4
